@@ -1,32 +1,32 @@
 # Claude Skills
 
-Eine persönliche Sammlung von [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) für Claude Code.
-Von Nico Allers, [Allers Technology](https://allers-technology.com).
+A personal collection of [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) for Claude Code.
+By Nico Allers, [Allers Technology](https://allers-technology.com).
 
-Skills sind kleine, wiederverwendbare Fähigkeiten, die Claude bei passenden Aufgaben automatisch dazuholt. Jeder Skill ist ein Ordner mit einer `SKILL.md` (Frontmatter plus Anleitung).
+Skills are small, reusable capabilities that Claude pulls in automatically whenever a task matches. Each skill is a folder with a `SKILL.md` (frontmatter plus instructions).
 
 ## Skills
 
-| Skill | Was er macht |
+| Skill | What it does |
 |-------|--------------|
-| [current-datetime](skills/current-datetime) | Holt das echte aktuelle Datum, die Uhrzeit, Zeitzone und den Wochentag aus der Systemuhr. Weil das Modell nie weiß, welcher Tag heute ist. |
+| [current-datetime](skills/current-datetime) | Fetches the real current date, time, timezone and weekday from the system clock. Because the model never knows what day it is. |
 
-## Nutzung
+## Usage
 
-Skill in dein persönliches Skill-Verzeichnis kopieren:
+Copy a skill into your personal skills directory:
 
 ```bash
 cp -r skills/current-datetime ~/.claude/skills/
 ```
 
-Claude Code erkennt den Skill danach automatisch und aktiviert ihn, sobald die Beschreibung zur Aufgabe passt.
+Claude Code picks the skill up automatically and activates it as soon as its description matches the task.
 
-## Neuen Skill anlegen
+## Adding a new skill
 
-1. Ordner unter `skills/<skill-name>/` anlegen.
-2. Eine `SKILL.md` mit Frontmatter (`name`, `description`) und der Anleitung im Markdown-Body schreiben.
-3. Die `description` entscheidet, wann der Skill greift, also konkret formulieren, mit Auslöse-Stichworten.
+1. Create a folder under `skills/<skill-name>/`.
+2. Write a `SKILL.md` with frontmatter (`name`, `description`) and the instructions in the markdown body.
+3. The `description` decides when the skill triggers, so be specific and include trigger keywords.
 
-## Lizenz
+## License
 
 MIT
