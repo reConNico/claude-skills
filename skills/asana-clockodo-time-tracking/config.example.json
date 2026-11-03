@@ -1,0 +1,54 @@
+{
+  "timezone": "Europe/Berlin",
+  "sizes": {
+    "XS": 0.5,
+    "S": 1,
+    "M": 2,
+    "L": 4,
+    "XL": 8
+  },
+  "asana": {
+    "tool_pattern": "asana",
+    "fields": {
+      "size": {
+        "gid": "",
+        "options": {
+          "XS": "",
+          "S": "",
+          "M": "",
+          "L": "",
+          "XL": ""
+        }
+      },
+      "booked_hours_gid": "",
+      "entry_ids_gid": ""
+    }
+  },
+  "clockodo": {
+    "service_id": 0,
+    "billable": 1,
+    "surcharge_service_id": null,
+    "surcharge_tag": "Surcharge"
+  },
+  "working_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "weekdays": [1, 2, 3, 4, 5]
+  },
+  "partial_booking": {
+    "enabled": true,
+    "first": 0.5,
+    "step": 0.25,
+    "cap": 0.75,
+    "min_size_for_partial": "S"
+  },
+  "projects": [
+    {
+      "name": "Example project",
+      "asana_project_gid": "",
+      "clockodo_customer_id": 0,
+      "clockodo_project_id": 0,
+      "review_section_gid": null
+    }
+  ]
+}
